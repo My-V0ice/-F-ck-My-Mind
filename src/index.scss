@@ -1,0 +1,19 @@
+@import "./Shared/ui/container/container";
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
