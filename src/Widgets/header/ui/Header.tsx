@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import './Header.scss';
-import logo from '../../../Shared/assets/icons/logo.svg';
+import logo from '@shared/assets/icons/logo.svg';
 
 export function Header() {
 
@@ -12,7 +12,7 @@ export function Header() {
             <div className="container">
                 <div className="header__content">
                     <NavLink to={'/'}>
-                        <img src={logo} className="header__logo"/>
+                        <img src={logo} alt="Lorum" className="header__logo"/>
                     </NavLink>
                     <nav className="header__nav">
                         <ul className="nav__list">

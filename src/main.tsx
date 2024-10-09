@@ -1,17 +1,21 @@
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import {Header} from "./Widgets/header";
 import {MainPage} from "./pages/main";
-import {GalleryPage} from "./pages/gallery";
+import {GalleryPage} from "@pages/gallery";
 import {ProjectsPage} from "./pages/projects";
 import {CertificationPage} from "./pages/certification/ui/CertificationPage.tsx";
 import {ContactPage} from "./pages/contact";
-import {Header} from "./Widgets/header";
 import './index.scss';
+
+import ScrollToTop from './Features/ScrollToTop/ScrollToTop.ts'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
+            <ScrollToTop/>
             <Header/>
             <Routes>
                 <Route path="/" element={<MainPage/>}/>
