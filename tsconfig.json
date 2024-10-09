@@ -14,7 +14,8 @@
       "@/*": ["./src/*"],
       "@pages/*": ["pages/*"],
       "@widgets/*": ["Widgets/*"],
-      "@shared/*": ["Shared/*"]
+      "@shared/*": ["Shared/*"],
+      "@features/*": ["Features/*"]
     }
   }
 }
